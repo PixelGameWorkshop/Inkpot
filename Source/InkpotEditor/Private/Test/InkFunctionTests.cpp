@@ -30,7 +30,7 @@ FInkpotValue UInkFunctionTests::Times(const TArray<FInkpotValue> & InValues)
 	return UInkpotValueLibrary::MakeStringInkpotValue( output );
 }
 
-FInkpotValue UInkFunctionTests::TRUE(const TArray<FInkpotValue> & InValues)
+FInkpotValue UInkFunctionTests::Func_TRUE(const TArray<FInkpotValue> & InValues)
 {
 	return UInkpotValueLibrary::MakeBoolInkpotValue( true );
 }

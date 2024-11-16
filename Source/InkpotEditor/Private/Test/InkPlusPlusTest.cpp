@@ -1152,7 +1152,7 @@ bool FInkTests::RunTest(const FString& InkTestName)
 								}
 								else if(functionName.Equals(UInkFunctionTests::FuncName_TRUE))
 								{
-									function->BindDynamic( testFunctions, &UInkFunctionTests::TRUE );
+									function->BindDynamic( testFunctions, &UInkFunctionTests::Func_TRUE );
 								}
 								else
 								{
