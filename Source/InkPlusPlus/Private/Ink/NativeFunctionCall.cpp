@@ -211,8 +211,8 @@ TSharedPtr<Ink::FValue> Ink::FNativeFunctionCall::CallBinaryListOperation(const 
 	// Normal (list • list) operation
 	if (value1->GetType() == Ink::EValueType::List && value2->GetType() == Ink::EValueType::List)
 	{
-		TArray<TSharedPtr<Ink::FValue>> list = {value1, value2};
-		return Call<Ink::FInkList>(list);
+		// TArray<TSharedPtr<Ink::FValue>> list = {value1, value2};
+		return Call<Ink::FInkList>({value1, value2});
 	}
 
 	StoryException.Throw(TEXT("NativeFunctionCall : Cannot call use '"+Name+"' operation on "+FString::FromInt((int)value1->GetType()) +" and "+ FString::FromInt((int)value2->GetType())));
